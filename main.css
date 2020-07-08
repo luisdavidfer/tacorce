@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html{
+    background: url(assets/background.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Luckiest Guy', cursive;
+    user-select: none;
+}
+
+/* Cards section */
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 220px;
+    height: 326px;
+    border: 15px solid #ff4c4c;
+    text-align: center;
+    margin: 50px;
+    font-size: xx-large;
+    font-size: 40px;
+    color: #ff4c4c;
+}
+.card:hover {
+    border: 15px solid #fff;
+    transform: scale(1.1,1.1);
+    color: #fff;
+}
+
+.card span {
+    position: relative;
+    top: 75%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    background: url(assets/cards/left-filtered.png);
+    background-size: cover;
+}
+.left:hover {
+    background: url(assets/cards/left.png);
+    background-size: cover;
+}
+
+.center {
+    background: url(assets/cards/center-filtered.png);
+    background-size: cover;
+}
+.center:hover {
+    background: url(assets/cards/center.png);
+    background-size: cover;
+}
+
+.right {
+    background: url(assets/cards/right-filtered.png);
+    background-size: cover;
+}
+.right:hover {
+    background: url(assets/cards/right.png);
+    background-size: cover;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+footer img {
+    width: 125px;
+}
+
+#social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+#social img {
+    width: 50px;
+    margin: 0 10px;
+}
+#social img:hover {
+    transform: scale(1.1,1.1);
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header img {
+    width: 200px;
+    height: 60px;
+}
+
+/* Media */
+
+@media (min-width: 1500px) {
+    .card {
+        width: 366px;
+        height: 543px;
+    }
+    header img {
+        width: 300px;
+        height: 100px;
+    }
+}
